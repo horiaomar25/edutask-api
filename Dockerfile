@@ -14,6 +14,6 @@ ENV NODE_ENV=production
 EXPOSE 3001
 
 ENV PORT=3001
-ENV DB_CONNECTION_STRING="postgres://whaizbiq:XLqK3fF-5Vtv33PeWMIM7vcZ-k_gFA8t@surus.db.elephantsql.com/whaizbiq"
+ENV DB_CONNECTION_STRING="postgresql://postgres:tb26GLXNVgRZB9Am@terminally-collected-bear.data-1.use1.tembo.io:5432/postgres"
 
 CMD ["npm", "start"]
