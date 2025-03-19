@@ -1,5 +1,5 @@
 FROM node:18.20.3-alpine AS base
-# Check https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine to understand why libc6-compat might be needed.
+
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
 
@@ -14,6 +14,6 @@ ENV NODE_ENV=production
 EXPOSE 3001
 
 ENV PORT=3001
-ENV DB_CONNECTION_STRING="postgresql://postgres:tb26GLXNVgRZB9Am@terminally-collected-bear.data-1.use1.tembo.io:5432/postgres"
+ENV DB_CONNECTION_STRING="postgresql://postgres.nqyusxsbgpckoqkkuusp:aA2nJfw8u05RMUlT@aws-0-eu-west-2.pooler.supabase.com:6543/postgres"
 
 CMD ["npm", "start"]
