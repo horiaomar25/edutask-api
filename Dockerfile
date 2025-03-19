@@ -14,6 +14,6 @@ ENV NODE_ENV=production
 EXPOSE 3001
 
 ENV PORT=3001
-
+ENV DB_CONNECTION_STRING="postgresql://postgres.nqyusxsbgpckoqkkuusp:aA2nJfw8u05RMUlT@aws-0-eu-west-2.pooler.supabase.com:6543/postgres"
 
 CMD ["npm", "start"]
